@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="app" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online Newspaper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pics/icon.png">
+</head>
+
+<body>
+    <form method="post">
+        <label>Name</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label>Age</label><br>
+        <div>
+            <input type="radio" value="lt18" name="age"> &lt;18 <br>
+            <input type="radio" value="19-35" name="age"> 19-35 <br>
+            <input type="radio" value="36-48" name="age"> 36-48 <br>
+            <input type="radio" value="gt49" name="age"> &gt;49 <br>
+        </div>
+        <label>Profession</label><br>
+        <input name="profession" list="professions">
+        <datalist id="professions">
+            <option>Software Engineer</option>
+            <option>DevOps</option>
+            <option>Data Analyst</option>
+            <option>Project manager</option>
+            <option>Web Developer</option>
+        </datalist><br>
+        <label>Country</label><br>
+        <select name="country" required multiple>
+            <option value="portugal">Portugal</option>
+            <option value="germany">Germany</option>
+            <option value="netherlands">Netherlands</option>
+            <option value="spain">Spain</option>
+            <option value="italy">Italy</option>
+            <option value="sweden">Sweden</option>
+            <option value="usa">USA</option>
+        </select><br>
+        <label>Interests</label>
+        <div>
+            <input type="checkbox" name="interest" value="football"> Football <br>
+            <input type="checkbox" name="interest" value="it"> IT <br>
+            <input type="checkbox" name="interest" value="basketball"> Basketball <br>
+            <input type="checkbox" name="interest" value="food"> Food <br>
+            <input type="checkbox" name="interest" value="art"> Art <br>
+            <input type="checkbox" name="interest" value="programming"> Programming <br>
+            <input type="checkbox" name="interest" value="travelling"> Travelling <br>
+            <input type="checkbox" name="interest" value="gaming"> Gaming <br>
+            <input type="checkbox" name="interest" value="cars"> Cars <br>
+            <input type="checkbox" name="interest" value="jewelry"> Jewelry <br>
+        </div>
+        <label>How did you find out about this website?</label> <br>
+        <textarea name="find-out"></textarea> <br>
+        <button type="submit" value="submit"> Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200');
+
+body {
+    margin: 0;
+}
+
+body>header:first-child {
+    background-color: #056CD5;
+    padding: 1em;
+}
+
+header h1 , header h2{
+    margin: 0;
+}
+
+div#signup a:first-child {
+    border-right: solid 1px;
+    margin: 1em 1em 1em 0;
+    padding: 0 1em 0 0;
+}
+
+div#signup a:nth-child(2) {
+    padding: 0 1em 0 0;
+}
+
+input#hamburger {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+}
+
+nav#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav#menu li:first-child {
+    border-color: #E1493E;
+}
+
+nav#menu li:nth-child(2) {
+    border-color: #8ABA56;
+}
+
+nav#menu li:nth-child(3) {
+    border-color: #5B4282;
+}
+
+nav#menu li:nth-child(4) {
+    border-color: #FF8932;
+}
+
+nav#menu li:nth-child(5) {
+    border-color: #18B7E9;
+}
+
+nav#menu li:last-child {
+    border-color: #E84C8B;
+}
+
+nav#menu li {
+    border-top: solid 5px;
+    list-style-type: none;
+    text-align: center;
+    padding: 1em;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-family: Poppins;
+    font-weight: 800;
+}
+
+img {
+    width: 100%;
+}
+
+aside#related {
+    background-color: #2A2F33;
+    padding: 1em;
+}
+
+aside#related a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-weight: 900;
+}
+
+aside#related p {
+    color: #A8ABAC;
+    font-family: Lora;
+    font-weight: 100;
+    font-size: 0.9em;
+}
+
+section#news article {
+    position: relative;
+}
+
+section#news h1>a {
+    font-family: Lora;
+    width: 200px;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    margin: 1em;
+    text-shadow: 5px 5px 5px #2A2F33;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+section a:hover {
+    background-color: #2A2F33;
+    transition: .5s;
+}
+
+section#news p {
+    padding: 0 1em;
+    font-family: Lora;
+    font-weight: 500;
+}
+
+section#news>article>p:first-of-type::first-letter {
+    font-size: 2rem;
+}
+
+section#news footer {
+    font-family: Poppins;
+    font-size: small;
+    background-color: #F4655F;
+    padding: 1em;
+    color: white;
+    margin: 1em 0;
+}
+
+section#news footer a {
+    color: white;
+    margin: 0 0.5em;
+}
+
+footer {
+    background-color: #2A2F33;
+    color: white;
+    padding: 0.5em;
+    font-family: Poppins;
+}

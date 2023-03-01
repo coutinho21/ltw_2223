@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+
+* {
+    color: #333333;
+    font-family: Crimson Pro;
+}
+
+.title {
+    font-family: Imperial Script;
+    font-size: 8em;
+    font-weight: 200;
+    text-align: center;
+    margin: 0.2em;
+}
+
+main {
+    margin: auto;
+    padding: 1.5em;
+    width: 50em;
+    background-color: #F7ECE2;
+}
+
+.info {
+    border: dashed 2px;
+    border-right: solid 8px;
+    background-color: #F5CAC3;
+    border-color: #F18482;
+    border-radius: 15px 0 0 15px;
+    padding: 0.5em;
+}
+
+.info ul {
+    list-style-type: none;
+    margin: 0.5em;
+    padding: 0;
+    font-size: 20px;
+}
+
+.info div {
+    margin: 0 0 1em 0;
+}
+
+.info p {
+    font-size: 1.2em;
+    margin: 0.2em 0;
+    font-weight: 100;
+}
+
+.francesinha {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+span {
+    color: #87A69E;
+}
+
+h2 {
+    font-family: Ruda;
+    font-size: 2.3em;
+    font-weight: 200;
+    border-bottom: solid 2px;
+    text-align: right;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+main > ul > li, main > ol > li {
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+main > ul, main > ol {
+    padding-left: 1em;
+}
