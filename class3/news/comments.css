@@ -1,0 +1,117 @@
+#comments {
+    margin: 1em;
+    font-family: Poppins;
+}
+
+#comments .comment {
+    margin: 1em 0;
+}
+
+#comments h1 {
+    font-weight: 900;
+}
+
+#comments .user {
+    margin: 1em 0;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#comments .date {
+    float: right;
+    font-weight: bold;
+}
+
+#comments .comment p {
+    background-color: #ECEFF0;
+    padding: 1.5em 1em;
+    font-family: Poppins;
+}
+
+#comments .comment p::before {
+    content: '\201C';
+    font-size: 3em;
+    display: inline-block;
+    font-weight: bold;
+    color: #CCCCCC;
+    font-family: Lora;
+    height: 20px;
+    vertical-align: -0.4em;
+}
+
+#comments form {
+    padding: 1em;
+    background-color: #ECEFF0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+}
+
+#comments form > label:nth-child(2) input {
+    border: solid 2px #000;
+    padding: 0.5em;
+    width: 65%;
+    float: right;
+}
+
+#comments form > label:nth-child(3) input {
+    border: solid 2px #000;
+    padding: 0.5em;
+    width: 75%;
+    float: right;
+}
+
+#comments form label textarea {
+    padding: 0.5em;
+    width: 82.5%;
+    height: 70px;
+    float: right;
+}
+
+#comments form > h2 {
+    grid-row: 1;
+    grid-column: span 2;
+    font-weight: 900;
+    font-size: 1em;
+    margin: 1em 0;
+}
+
+#comments form > label:nth-child(2) { /*username*/
+    grid-row: 2;
+    grid-column: 1;
+    text-align: left;
+    display: inline-block;
+    line-height: 30px;
+}
+
+#comments form > label:nth-child(3) { /*email*/
+    grid-row: 2;
+    grid-column: 2;
+    text-align: left;
+    display: inline-block;
+    line-height: 30px;
+}
+
+#comments form > label:nth-child(4) { /*comment*/
+    grid-row: 3;
+    grid-column: span 2;
+    line-height: 200%;
+    text-align: left;
+    display: inline-block;
+    line-height: 80px;
+}
+
+#comments form > button {
+    grid-row: 4;
+    grid-column: span 2;
+    justify-self: right;
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: #000;
+    font-family: Poppins;
+    font-weight: 200;
+}
