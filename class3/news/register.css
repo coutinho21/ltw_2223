@@ -3,6 +3,7 @@ section#register {
     grid-row: 3/4;
     font-family: Poppins;
     font-weight: bold;
+    margin: 5em 0 10em 0;
 }
 
 section#register h1 {
@@ -25,9 +26,37 @@ section#register input {
     margin-bottom: 2em;
 }
 
+section#register button {
+    background-color: #000;
+    width: 80px;
+    height: 40px;
+    color: white;
+}
+
 @media (max-width: 60em) {
     section#register {
         grid-column: span 2;
+    }
+}
+
+@media (max-width: 30em) {
+    nav#menu ul {
+        margin: 0;
+    }
+    section#register {
+        grid-column: span 2;
+        margin: 0;
+    }
+
+    section#register form {
+        width: auto;
+        padding: 7em 4em 4em 4em;
+    }
+
+    section#register h1 {
+        position: absolute;
+        margin: auto;
+        width: 100%;
     }
 }
     
