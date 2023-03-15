@@ -1,0 +1,19 @@
+body {
+    width: 300px;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+
+button {
+    width: 100%;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+input {
+    width: 100%;
+    font-size: 1em;
+    margin-top: 1em;
+}
