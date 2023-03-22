@@ -1,13 +1,20 @@
 <?php
-function temp($db, $id)
-{
-    $stmt = $db->prepare('SELECT * FROM news JOIN users USING (username) WHERE id = :id');
-    $stmt->bindParam(':id', $_GET['id']);
-    $stmt->execute();
-    $article = $stmt->fetch();
+    require_once('database/connection.php');
+    require_once('database/news.php');
+    $db = getDatabaseConnection();
+    $articles = getAllNews($db);
 
-    $stmt = $db->prepare('SELECT * FROM comments JOIN users USING (username) WHERE news_id = ?');
-    $stmt->execute(array($_GET['id']));
-    $comments = $stmt->fetchAll();
-}
+    foreach ($articles as $article) {
+        $date = date('F j', $article['published']);
+        $tags = explode(',', $article['tags']);
+        echo '<h1> News number ' . $article['id'] . '</h1>';
+        echo '<h1>' . $article['title'] . '</h1>';
+        echo '<h3> By ' . $article['username'] . ' on ' . $date . '</h3>';
+        echo '<p>' . $article['introduction'] . '</p>';
+        echo '<p>' . $article['fulltext'] . '</p>';
+        echo "<h4>Number of comments</h4>" . $article['comments'];
+    }
+
+    echo "<br/> <br/>";
+    echo "<a href='index.php'>Back to Homepage</a>"
 ?>
