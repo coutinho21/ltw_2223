@@ -12,9 +12,9 @@
         $num2 = $_GET["num2"];
         $sum = $num1 + $num2;
         echo "$num1 + $num2 = $sum\n";
-        echo "<br/> <br/>";
-
-        echo "<a href= \"form2.html\">Do another sum.</a>";
     ?>
+    <br/><br/>
+    <a href="form2.html">Do another sum.</a>
+    
 </body>
 </html>
