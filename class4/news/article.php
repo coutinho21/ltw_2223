@@ -75,6 +75,7 @@
       <img src="https://picsum.photos/600/300?<?= $id ?>" alt="">
       <p><?= $article['introduction'] ?></p>
       <p><?= $article['fulltext'] ?></p>
+      <a href="edit_article.php?id=<?=$id?>">Edit this article</a> 
       <section id="comments">
         <h1><?= $article['comments'] ?> Comments</h1>
         <?php

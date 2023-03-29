@@ -18,4 +18,9 @@
         $stmt->execute(array($id));
         return $stmt->fetchAll();
     }
+
+    function editArticle($db, $id, $title, $introduction, $fulltext){
+        $stmt = $db->prepare('UPDATE news SET title = ?, introduction = ?, fulltext = ? WHERE id = ?');
+        $stmt->execute(array($title, $introduction, $fulltext, $id));
+    }
 ?>
