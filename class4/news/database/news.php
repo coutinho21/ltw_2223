@@ -1,6 +1,4 @@
 <?php
-    require_once('database/connection.php');
-
     function getAllNews($db){
         $article = $db->prepare('SELECT news.*, users.*, COUNT(comments.id) AS comments
         FROM news JOIN

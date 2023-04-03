@@ -1,7 +1,9 @@
 <?php
+    if(!isset($_SESSION['username']))
+        header('Location: index.php');
     require_once('database/connection.php');
     require_once('database/news.php');
-
+    session_start();
     $db = getDatabaseConnection();
     $id = $_POST['id'];
     $title = $_POST['title'];

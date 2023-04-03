@@ -30,7 +30,7 @@ INSERT INTO users VALUES ("abril",   "7110eda4d09e062aa5e4a390b0a572ac0d2c0220",
 
 INSERT INTO news VALUES (NULL,
   'Lorem ipsum dolor sit amet, consectetur',
-  1507901651,
+  1507901651 ,
   'politics,economy',
   'abril',
   'Nulla facilisi. Proin et lectus dapibus, fermentum nisi a, varius nulla. Sed massa dolor, commodo at iaculis id, facilisis ut erat. Ut ac fringilla sem. Ut vel eros suscipit, convallis arcu porttitor, fringilla purus. Pellentesque eget sapien sem. Maecenas eget pharetra ipsum. Ut sollicitudin sem non feugiat pharetra.',

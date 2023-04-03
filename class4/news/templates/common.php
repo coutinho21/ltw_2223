@@ -1,5 +1,7 @@
 <?php 
-    function outputHeader(){ ?>
+    function outputHeader(){ 
+        session_start();    
+?>
         <!DOCTYPE html>
         <html lang="en-US">
 
@@ -19,8 +21,12 @@
             <h1><a href="index.php">Super Legit News</a></h1>
             <h2><a href="index.php">Where fake news are born!</a></h2>
             <div id="signup">
-            <a href="register.html">Register</a>
-            <a href="login.html">Login</a>
+                <?php if(isset($_SESSION['username'])){ ?> 
+                        <a href="action_logout.php">Logout</a>
+                <?php } else { ?>
+                <a href="register.php">Register</a>
+                <a href="login.php">Login</a>
+                <?php } ?>
             </div>
         </header>
         <nav id="menu">
