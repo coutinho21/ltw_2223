@@ -27,7 +27,7 @@
       <p><?= $article['introduction'] ?></p>
       <p><?= $article['fulltext'] ?></p>
       <?php if(isset($_SESSION['username'])){ ?> 
-      <a href="edit_article.php?id=<?=$id?>">Edit this article</a> 
+      <a style="text-align: center; line-height: 40px; display: block;" href="edit_article.php?id=<?=$id?>">Edit this article</a> 
       <?php } ?>
       <section id="comments">
         <h1><?= $article['comments'] ?> Comments</h1>

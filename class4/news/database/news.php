@@ -21,4 +21,10 @@
         $stmt = $db->prepare('UPDATE news SET title = ?, introduction = ?, fulltext = ? WHERE id = ?');
         $stmt->execute(array($title, $introduction, $fulltext, $id));
     }
+
+    function insertArticle($db, $title, $introduction, $fulltext, $username, $tags, $date){
+        $stmt = $db->prepare('INSERT INTO news (title, published, tags, username, introduction, fulltext) VALUES (?, ?, ?, ?, ?, ?)');
+        $stmt->execute(array($title, $date, $tags, $username, $introduction, $fulltext));
+        return $db->lastInsertId();
+    }
 ?>

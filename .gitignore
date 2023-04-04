@@ -1,4 +1,5 @@
 .DS_Store
 .idea
-.vs_code
+.vscode
 **/.DS_Store
+News.session.sql
