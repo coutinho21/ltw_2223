@@ -27,4 +27,9 @@
         $stmt->execute(array($title, $date, $tags, $username, $introduction, $fulltext));
         return $db->lastInsertId();
     }
+
+    function deleteArticle($db, $id){
+        $stmt = $db->prepare('DELETE FROM news WHERE id = ?');
+        $stmt->execute(array($id));
+    }
 ?>
