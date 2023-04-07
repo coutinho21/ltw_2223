@@ -43,7 +43,7 @@
             <p><?= $comment['text'] ?></p>
           </article>
         <?php } ?>
-        <form>
+        <form method="post" action="action_insert_comment.php">
           <h2>Add your voice...</h2>
           <label>Username
             <input type="text" name="username">
@@ -54,7 +54,8 @@
           <label>Comment
             <textarea name="comment"></textarea>
           </label>
-          <button formaction="#" formmethod="post">Reply</button>
+          <input hidden name="id" value="<?=$_GET['id']?>">
+          <button type="submit">Reply</button>
         </form>
       </section>
       <footer>

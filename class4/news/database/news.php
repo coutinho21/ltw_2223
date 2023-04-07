@@ -32,4 +32,9 @@
         $stmt = $db->prepare('DELETE FROM news WHERE id = ?');
         $stmt->execute(array($id));
     }
+
+    function insertComment($db, $news_id, $username, $date ,$comment){
+        $stmt = $db->prepare('INSERT INTO comments (news_id, username, published, text) VALUES (?, ?, ?, ?)');
+        $stmt->execute(array($news_id, $username, $date, $comment));
+    }
 ?>

@@ -1,7 +1,9 @@
 <?php
     session_start();
-    if(!isset($_SESSION['username']))
+    if(!isset($_SESSION['username'])){
         header('Location: index.php');
+        exit();
+    }
 
     require_once('database/connection.php');
     require_once('database/news.php');

@@ -1,8 +1,10 @@
 <?php
     session_start();
 
-    if(!isset($_SESSION['username']))
+    if(!isset($_SESSION['username'])){
         header('Location: index.php');
+        exit();
+    }
 
     require_once('database/connection.php');
     require_once('database/news.php');
@@ -13,8 +15,10 @@
     if(isset($_POST['yes'])){
         deleteArticle($db, $id);
         header('Location: index.php');
+        exit();
     }
     else if(isset($_POST['no'])){
         header('Location: article.php?id='.$id);
+        exit();
     }
 ?>
