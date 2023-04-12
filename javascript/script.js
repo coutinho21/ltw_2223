@@ -1,8 +1,10 @@
-function changeAllArticleColors(){
-    const products = document.querySelectorAll('section#products > article')
-    for(const product of products){
-        product.classList.add('sale')
-    }
+function attachBuyEvents(){
+    const buttons = document.querySelectorAll('section#products button')
+    for(const button of buttons){
+        button.addEventListener('click', function() {
+            console.log(this)
+        })
+    }   
 }
 
-changeAllArticleColors()
+attachBuyEvents()
