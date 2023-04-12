@@ -54,3 +54,7 @@ body {
 #cart thead tr, #cart tfoot tr  {
   background-color: #edf6f9;
 }
+
+#products > .sale {
+  background-color: #ffddd2;
+}
