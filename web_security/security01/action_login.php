@@ -4,14 +4,15 @@
   $db = new PDO('sqlite:database.db');
 
   $username = $_POST['username'];
-  $password = sha1($_POST['password']);
+  $password = $_POST['password'];
 
-  $stmt = $db->prepare("SELECT * FROM users WHERE username = '?' AND password = '?'");
-  $stmt->execute(array($username, $password));
+  $stmt = $db->prepare("SELECT * FROM users WHERE username = '?'");
+  $stmt->execute(array($username));
 
   $user = $stmt->fetch();
 
-  if ($user) $_SESSION['username'] = $user['username'];
+
+  if ($user && password_verify($password, $user['password'])) $_SESSION['username'] = $user['username'];
 
   header('Location: /');
 ?>
