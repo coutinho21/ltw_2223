@@ -6,7 +6,7 @@
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  $stmt = $db->prepare("SELECT * FROM users WHERE username = '?'");
+  $stmt = $db->prepare('SELECT * FROM users WHERE username = ?');
   $stmt->execute(array($username));
 
   $user = $stmt->fetch();
